@@ -1,0 +1,54 @@
+# ---- Python/Django ----
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3  # SQLite database (if you use a different DB, adjust accordingly)
+media/      # User-uploaded files
+staticfiles/ # Static files folder
+*.sqlite3   # Any other SQLite database files
+
+# Virtual environments
+env/
+venv/
+.venv/
+pip-log.txt
+
+# ---- Node/React ----
+node_modules/
+npm-debug.log
+yarn-error.log
+.env       # Environment variables for React and Django
+.DS_Store  # macOS specific
+.vscode/   # VSCode settings
+
+# Build/Production
+build/
+dist/
+
+# ---- Logs ----
+*.log
+logs/
+*.out
+*.pid
+
+# ---- IDE/Editor-specific files ----
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ---- Miscellaneous ----
+*.swp
+*.bak
+*.tmp
+*.orig
+*.sass-cache/
