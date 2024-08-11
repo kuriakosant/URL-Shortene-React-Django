@@ -1,0 +1,19 @@
+# Django web framework
+Django==4.1.0
+
+# Django REST framework for building APIs
+djangorestframework==3.14.0
+
+# Django CORS headers to handle cross-origin requests (needed for React to communicate with Django)
+django-cors-headers==3.13.0
+
+# psycopg2 for PostgreSQL
+# psycopg2-binary==2.9.6
+
+# Gunicorn (for deploying in production, optional)
+# gunicorn==20.1.0
+
+# Other useful utilities (optional)
+# requests==2.31.0
+# python-decouple (for environment variables in production)
+# python-decouple==3.8
