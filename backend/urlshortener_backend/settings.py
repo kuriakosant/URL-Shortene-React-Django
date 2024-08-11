@@ -25,12 +25,30 @@ SECRET_KEY = 'django-insecure-=fg_2+14r7&l4j!d-d3x6&%2*ol^e68l%=))h==gftslztt!zj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',  # Open for development purposes, tighten later
+    ],
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',  # Use JSON for API responses
+    ),
+}
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',  # React frontend
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+
+    'rest_framework',  # Django REST Framework
+    'corsheaders',     # CORS Headers for handling cross-origin requests
+    'shortener',       # Your custom app for URL shortening (to be created)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+       'corsheaders.middleware.CorsMiddleware',  # for cors middleware
 ]
 
 ROOT_URLCONF = 'urlshortener_backend.urls'
@@ -121,3 +140,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # project's static files
+]
+
+# Media files (uploads, etc.)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
