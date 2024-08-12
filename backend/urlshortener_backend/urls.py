@@ -1,7 +1,7 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('', views.shorten_url, name='shorten_url'),
-    path('<str:short_url>/', views.redirect_url, name='redirect_url'),
+    path('admin/', admin.site.urls),
+    path('', include('shortener.urls')),  # Include the shortener app URLs
 ]
