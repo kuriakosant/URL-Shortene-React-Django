@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     'rest_framework',  # Django REST Framework
     'corsheaders',     # CORS Headers for handling cross-origin requests
-    # temp 'shortener',       # Your custom app for URL shortening (to be created)
+    'shortener',       # Your custom app for URL shortening (to be created)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
