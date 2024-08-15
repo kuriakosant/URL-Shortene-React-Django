@@ -1,6 +1,6 @@
 // src/Components/About.js
 import React from 'react';
-import './About.css'; 
+import '../Styles/About.css'; // Updated path
 
 const About = () => {
     return (

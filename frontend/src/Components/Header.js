@@ -1,7 +1,7 @@
 // src/Components/Header.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
-import './Header.css'; // Optional: Create a CSS file for styling
+import { Link } from 'react-router-dom';
+import '../Styles/Header.css'; // Updated path
 
 const Header = () => {
     return (

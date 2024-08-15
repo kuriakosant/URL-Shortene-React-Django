@@ -1,7 +1,7 @@
 // src/Components/Contact.js
 import React from 'react';
 import { FaGithub } from 'react-icons/fa'; // Importing Github icon from react-icons
-import './Contact.css'; 
+import '../Styles/Contact.css';
 
 const Contact = () => {
     return (
