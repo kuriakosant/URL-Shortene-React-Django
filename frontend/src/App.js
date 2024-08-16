@@ -1,24 +1,22 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Components/Header';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import Home from './Components/Home'; 
+import Header from './Components/Header';
 
-const App = () => {
+function App() {
     return (
         <Router>
-            <div>
-                <Header />
-                <Switch>
-                    <Route path="/" exact component={Home} /> {/* Home component */}
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                </Switch>
-            </div>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
         </Router>
     );
-};
+}
 
 export default App;
