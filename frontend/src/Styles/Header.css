@@ -1,36 +1,37 @@
 /* src/Styles/Header.css */
-header {
-    background-color: #333; /* Dark background for the header */
-    color: white;
-    padding: 15px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0;
-}
-
-nav ul li {
-    display: inline; /* Horizontal list */
-    margin: 0 15px; /* Space between links */
-}
-
-nav ul li a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    font-size: 24px;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
-}
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #61dafb;
+    border-radius: 4px;
+  }
+  
