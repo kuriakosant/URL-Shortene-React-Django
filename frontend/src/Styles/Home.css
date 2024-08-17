@@ -1,16 +1,29 @@
 /* src/Styles/Home.css */
 .home-container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .home-container:hover {
+    transform: scale(1.02);
   }
   
   h1 {
-    font-size: 36px;
+    font-size: 40px;
     color: #333;
+    margin-bottom: 10px;
   }
   
   p {
-    font-size: 18px;
+    font-size: 20px;
     color: #666;
     margin-bottom: 30px;
   }
@@ -18,29 +31,44 @@
   .shorten-form {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
   }
   
   .url-input {
     width: 400px;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid #61dafb;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .url-input:focus {
+    border-color: #21a1f1;
+    box-shadow: 0 0 10px rgba(33, 161, 241, 0.3);
   }
   
   .submit-btn {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #61dafb;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .submit-btn:hover {
     background-color: #21a1f1;
+    transform: scale(1.05);
+  }
+  
+  .progress-bar {
+    height: 5px;
+    background-color: #61dafb;
+    transition: width 0.5s ease;
+    margin-top: 20px;
+    border-radius: 5px;
   }
   
