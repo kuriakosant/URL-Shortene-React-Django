@@ -4,10 +4,13 @@ import '../Styles/Home.css';
 
 const Home = () => {
   const [url, setUrl] = useState('');
-
+  const [progress, setProgress] = useState(0);
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (to backend)
+    setProgress(100); // Simulating progress bar fill
+    // Add actual form submission logic here.
+    setTimeout(() => setProgress(0), 3000);  // Reset the progress bar after 3 seconds
     alert(`Shortening URL: ${url}`);
   };
 
@@ -26,6 +29,8 @@ const Home = () => {
         />
         <button type="submit" className="submit-btn">Shorten URL</button>
       </form>
+
+      <div className="progress-bar" style={{ width: `${progress}%` }}></div>
     </div>
   );
 };
