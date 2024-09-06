@@ -1,0 +1,28 @@
+/* src/Styles/Footer.css */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .footer:hover {
+    background-color: #1f1f1f;
+  }
+  
+  .footer-text {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #61dafb;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-text:hover {
+    color: #21a1f1;
+  }
+  
