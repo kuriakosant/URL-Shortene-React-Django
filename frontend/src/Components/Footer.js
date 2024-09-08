@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer-text">URL Shortener App</p>
-      <p className="footer-text">© 2024 Your Name. All Rights Reserved.</p>
+      <p className="footer-text">© 2024 Kyriakos Antoniadis. All Rights Reserved.</p>
     </footer>
   );
 };
