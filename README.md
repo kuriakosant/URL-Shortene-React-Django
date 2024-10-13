@@ -108,6 +108,7 @@ A **React-Django Full-Stack Application** for shortening long URLs into manageab
 
 URL-Shortener/
 │
+
 ├── backend/
 │   ├── manage.py           # Django's entry point
 │   ├── settings.py         # Backend configurations
@@ -115,6 +116,7 @@ URL-Shortener/
 │   ├── models.py           # Database models
 │   └── templates/          # Backend templates
 │
+
 ├── frontend/
 │   ├── src/
 │   │   ├── App.js          # Main React file
@@ -123,6 +125,7 @@ URL-Shortener/
 │   │   └── Pages/          # App pages (Home, About, Contact)
 │   └── public/             # Static assets
 │
+
 └── README.md
 
 ----------
