@@ -103,7 +103,7 @@ A **React-Django Full-Stack Application** for shortening long URLs into manageab
 
 ----------
 
-**Project Structure**
+## **Project Structure**
 
 **URL-Shortener**
 
